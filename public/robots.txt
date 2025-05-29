@@ -1,0 +1,38 @@
+# DongPlay robots.txt
+
+User-agent: *
+Allow: /
+Allow: /donghua
+Allow: /jadwal
+Allow: /bookmark
+
+# Disallow video player pages to prevent duplicate content
+Disallow: /donghua/*/watch/*
+
+# Sitemap
+Sitemap: https://dongplay.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Additional rules
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*?*
+Disallow: /search?
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /reset-password
+Disallow: /verify-email
+
+# Allow static assets
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
